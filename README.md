@@ -2,9 +2,12 @@
 
 <img src="assets/banner.svg" alt="0xVel" width="100%"/>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=900&color=C8C8C8&background=00000000&center=true&vCenter=true&width=760&lines=17.;Offensive+Security+and+Vulnerability+Research.;Exploit+Development.+Malware+Analysis.;Perfectionist.+that's+why+half+my+stuff+get+pushed+late.;I+love+breaking+things." alt="typing"/></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=5000&pause=900&color=C8C8C8&background=00000000&center=true&vCenter=true&width=760&lines=17.;Offensive+Security+and+Vulnerability+Research.;Exploit+Development.+Malware+Analysis.;Perfectionist.+that's+why+half+my+stuff+get+pushed+late.;I+love+breaking+things." alt="typing"/></a>
 
-<img src="https://img.shields.io/badge/OFFENSIVE_SECURITY-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/VULN_RESEARCH-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/EXPLOIT_DEV-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/MALWARE_ANALYSIS-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/REVERSE_ENGINEERING-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/SELF--HOSTING-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://komarev.com/ghpvc/?username=03xe&style=for-the-badge&color=2a2a2a&labelColor=0a0a0a&label=VISITS"/>
+<img src="https://img.shields.io/badge/OFFENSIVE_SECURITY-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/VULN_RESEARCH-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/EXPLOIT_DEV-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/MALWARE_ANALYSIS-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/REVERSE_ENGINEERING-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> <img src="https://img.shields.io/badge/SELF--HOSTING-0a0a0a?style=for-the-badge&labelColor=0a0a0a"/> 
+
+<br>
+<img src="https://komarev.com/ghpvc/?username=03xe&style=for-the-badge&color=2a2a2a&labelColor=0a0a0a&label=VISITS"/>
 
 <br><br>
 
