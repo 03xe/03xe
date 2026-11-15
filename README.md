@@ -71,4 +71,4 @@ I'll probably import all of my projects from my other acc later.
 
 [`github.com/03xe`](https://github.com/03xe) · `Discord: @03xe` · 
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,3&height=140&section=footer&fontColor=ffffff" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=1a1a1a&height=140&section=footer" width="100%"/>
