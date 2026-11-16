@@ -19,7 +19,7 @@
 
 ## ▌ WHO THE FUCK AM I? you might ask
 
-I'm V. Offensive security and vulnerability research, with exploit development and malware analysis next to it (Holy fuck I do a lot of things).
+I'm V. I do offensive security and vulnerability research, with exploit development and malware analysis & development next to it (Holy fuck I do a lot of things).
 
 I'm a perfectionist.
 
