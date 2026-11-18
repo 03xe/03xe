@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Builds the static README section SVGs in the same visual language as banner/boot/profile-card.
 Run from repo root: python3 scripts/gen_static.py"""
 import math, os, textwrap
@@ -42,7 +41,7 @@ def write(name, svg):
     print("wrote", name, len(svg))
 
 
-# ---------------------------------------------------------------- WHO
+# WHO
 def who():
     b = [header("WHO THE FUCK AM I?", "// you might ask")]
     L = [  # (y, [(text, fill, bold)...])
@@ -63,7 +62,7 @@ def who():
     write("who.svg", frame(900, 300, "".join(b)))
 
 
-# ---------------------------------------------------------------- WHAT I DO
+# WHAT I DO
 ICONS = {
     "cross": '<path d="M0 -21L-19 -14V3Q-19 14 -1 22L1 12L-3 6L2 -3L-4 -10Z" fill="none" stroke="{c}" stroke-width="2" stroke-linejoin="round"/><path d="M4 -20L19 -14V3Q19 14 5 21L4 11L0 6L5 -3L-1 -10Z" fill="none" stroke="{c}" stroke-width="2" stroke-linejoin="round"/>',
     "hex": '<path d="M10 -10A14 14 0 1 0 14 2" fill="none" stroke="{c}" stroke-width="3"/><path d="M10 -10L21 -8L12 -20Z" fill="{c}"/><path d="M-5 -3L-9 1L-5 5M5 -3L1 1L5 5" fill="none" stroke="{c}" stroke-width="2"/>',
@@ -95,7 +94,7 @@ def what():
     write("what-i-do.svg", frame(900, 384, "".join(b)))
 
 
-# ---------------------------------------------------------------- PROJECTS
+# PROJECTS
 def lock(x, y, c):
     return (f'<g transform="translate({x} {y})"><path d="M-9 -2V-9A9 9 0 0 1 9 -9V-2" fill="none" stroke="{c}" stroke-width="3"/>'
             f'<rect x="-14" y="-2" width="28" height="22" fill="none" stroke="{c}" stroke-width="2"/><rect x="-3" y="5" width="6" height="8" fill="{c}"/></g>')
@@ -121,7 +120,7 @@ def projects():
     write("projects.svg", frame(900, 376, "".join(b)))
 
 
-# ---------------------------------------------------------------- TYPING
+# TYPING
 def typing():
     lines = ["17. Offensive Security and Vulnerability Research.", "Exploit Development. Malware Analysis.",
              "Perfectionist. that's why half my stuff get pushed late.", "I love breaking things."]
@@ -152,7 +151,7 @@ def typing():
     write("typing.svg", svg)
 
 
-# ---------------------------------------------------------------- BADGES
+# BADGES
 def badges():
     tags = ["OFFENSIVE_SECURITY", "VULN_RESEARCH", "EXPLOIT_DEV", "MALWARE_ANALYSIS", "REVERSE_ENGINEERING", "SELF-HOSTING"]
     cw, gap, pad = 6.8, 8, 12
@@ -166,7 +165,7 @@ def badges():
     write("badges.svg", f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 40" width="900" height="40"><rect width="900" height="40" fill="#050505"/><g {FONT}>{"".join(o)}</g></svg>')
 
 
-# ---------------------------------------------------------------- CONTACT
+# CONTACT
 def contact():
     b = [header("CONTACT", "// find me")]
     for i, (k, v) in enumerate([("GITHUB", "github.com/03xe"), ("DISCORD", "@03xe")]):
@@ -179,7 +178,7 @@ def contact():
     write("contact.svg", frame(900, 176, "".join(b)))
 
 
-# ---------------------------------------------------------------- FOOTER
+# FOOTER
 def footer():
     paths = []
     for k, (amp, ph, col, dur) in enumerate([(14, 0, "#0c0c0c", 9), (10, 1.3, "#111", 7), (7, 2.6, "#171717", 5)]):
@@ -190,7 +189,7 @@ def footer():
     write("footer.svg", f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120"><defs><clipPath id="f"><rect width="900" height="120"/></clipPath></defs><g {FONT}><rect width="900" height="120" fill="{C["bg"]}"/><g clip-path="url(#f)">{"".join(paths)}</g><rect y="0" width="900" height="120" fill="none"/>{t}</g></svg>')
 
 
-# ---------------------------------------------------------------- SNAKE (placeholder; snk overwrites)
+# SNAKE (placeholder; snk overwrites)
 def snake_placeholder():
     cells = "".join(f'<rect x="{28+i*16}" y="{48+j*16}" width="12" height="12" fill="#{"1a1a1a" if (i*j) % 5 else "2a2a2a"}"/>' for i in range(52) for j in range(7))
     t = f'<text x="450" y="34" font-size="11" fill="#555" text-anchor="middle" letter-spacing="4">SNAKE WARMING UP // RUNS AFTER FIRST WORKFLOW</text>'
