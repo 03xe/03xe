@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Self-hosted stats card for the profile README. No third-party render servers.
 usage: gen_stats.py [--user 03xe] [--out assets/stats.svg] [--demo | --placeholder]
 env:   GITHUB_TOKEN (or STATS_TOKEN, a PAT with read:user, to include private contribs)"""
@@ -74,7 +73,7 @@ def render(d, pending=False):
     F = "font-family=\"'Courier New',Courier,monospace\""
     v = (lambda x: "--") if pending else (lambda x: f"{x:,}")
     cur, best = (0, 0) if pending else streaks(d["days"])
-    stamp = "AWAITING FIRST SYNC" if pending else "synced " + datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%MZ")
+    stamp = "AWAITING FIRST SYNC" if pending else "synced " + datetime.now(timezone.utc).strftime("%Y-%m-%d")
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"><defs><clipPath id="rc"><rect x="28" y="60" width="844" height="10"/></clipPath>'
          '<pattern id="gr" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#111"/></pattern>'
          '<linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>'
