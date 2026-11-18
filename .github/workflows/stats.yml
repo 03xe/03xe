@@ -16,7 +16,7 @@ jobs:
         with: { python-version: "3.12" }
       - name: generate stats card
         env:
-          # optional: add a PAT (read:user) as repo secret STATS_TOKEN to count private contributions
+          # Note: add a PAT (read:user) as repo secret STATS_TOKEN to count private contributions
           GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
         run: python scripts/gen_stats.py --user 03xe --out assets/stats.svg
       - name: commit
