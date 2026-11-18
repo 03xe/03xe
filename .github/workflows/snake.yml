@@ -1,6 +1,6 @@
 name: snake
 on:
-  schedule: [{ cron: "0 */12 * * *" }]
+  schedule: [{ cron: "43 * * * *" }]
   workflow_dispatch:
   push:
     branches: [main]
@@ -12,14 +12,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: 03xe
           outputs: |
-            dist/snake.svg?color_snake=%23f2f2f2&color_dots=%23101010,%232a2a2a,%23555555,%239a9a9a,%23f2f2f2&color_dot_border=%23050505
-      - name: commit into main
+            dist/snake.svg?color_snake=%23f2f2f2&color_dots=%23161616,%232a2a2a,%23555555,%239a9a9a,%23f2f2f2&color_dot_border=%23050505
+      - name: commit into main (no orphan "output" branch needed)
         run: |
-          cp dist/snake.svg assets/snake.svg
+          python scripts/style_snake.py dist/snake.svg assets/snake.svg
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/snake.svg
