@@ -1,3 +1,4 @@
+
 name: snake
 on:
   schedule: [{ cron: "43 * * * *" }]
